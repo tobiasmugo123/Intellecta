@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Intellecta offers free, interactive lessons that take you from foundational intuition to mastery in advanced STEM and the philosophy of science and technology." />
+  <title>Intellecta | Master Advanced STEM</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="top">
+
+  <!-- Skip link for keyboard and screen reader users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <nav aria-label="Main navigation" class="navbar">
+    <ul id="nav-list">
+        <li><a href="index.html" class="brand">Intellecta</a></li>
+        <li><a href="#courses">Courses</a></li>
+       <li> <a href="#library">Library</a></li>
+         <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+         <li><a href="#about">Our Mission</a></li>
+        <li> <a href="#faq">FAQ</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <!-- Main Page Content -->
+  <main id="main-content">
+
+    <!-- Hero Section (First thing visitors see) -->
+    <section class="hero">
+      <h1 id="title">Deepen Your Understanding of Advanced STEM</h1>
+      <p>
+        Free, interactive lessons designed to take you from foundational intuition
+        to mastery in Science, Technology, Engineering, and Mathematics.
+      </p>
+      <p>
+        Every lesson has an article, exercises, and an optional video. Every step you master earns you progress, and
+        every course, pathway, and rank has its own achievement.
+      </p>
+      <a href="#courses" class="btn-primary">Explore Courses</a>
+      <a href="#achievements" class="btn-secondary">See the Achievements</a>
+      <form action="pages/placement.html" method="get">
+        <button type="submit" class="btn-primary">Take the placement diagnostic</button>
+      </form>
+    </section>
+
+    <!-- Course Catalog Grid -->
+    <section id="courses" class="catalog" aria-labelledby="pathways-heading">
+      <h2 id="pathways-heading">Our Pathways</h2>
+      <p>
+        A pathway is a curated route through the Library. Completing a whole pathway earns a named achievement
+        at the highest rank.
+      </p>
+
+      <div class="course-grid">
+        <!-- Course Card 1 -->
+        <article class="pathways">
+          <h3>The Mathematician</h3>
+          <p>Build a rigorous understanding of mathematics within this subject, starting at Calculus.</p>
+          <p class="pathway-reward">Completing this pathway earns the Euler Achievement.</p>
+          <a href="pages/Calculus_1/Calculus_1_Overview.html">Start Learning &rarr;</a>
+        </article>
+
+        <!-- Course Card 2 -->
+        <article class="pathways">
+          <h3>The Physicist</h3>
+          <p>From Classical Mechanics to General Relativity, learn exactly how the world works, from particles to black holes.</p>
+          <p class="pathway-reward">Completing the Classical Physics Pathway earns the Newton Achievement. Completing the Modern Physics Pathway earns the Einstein Achievement.</p>
+          <a href="pages/lesson.html">Start Learning &rarr;</a>
+        </article>
+
+        <!-- Course Card 3 -->
+        <article class="pathways">
+          <h3>The Chemist</h3>
+          <p>Here in this course, we learn not just chemistry, but its variants as well, like Astrochemistry and Electrochemistry.</p>
+          <p class="pathway-reward">Completing this pathway earns the Lavoisier Achievement.</p>
+          <a href="pages/lesson.html">Start Learning &rarr;</a>
+        </article>
+
+        <!-- Course Card 4 -->
+        <article class="pathways">
+          <h3>The Engineer</h3>
+          <p>Apply physics and mathematics to real-world systems, mechanics, and simulation modeling.</p>
+          <p class="pathway-reward">Completing the Aerospace Pathway earns the Tsiolkovsky Achievement.</p>
+          <a href="pages/lesson.html">Start Learning &rarr;</a>
+        </article>
+
+        <!-- Course Card 5 -->
+        <article class="pathways">
+          <h3>Programming</h3>
+          <p>Apply problem-solving skills here that will not just stick in programming, but in life in general.</p>
+          <p class="pathway-reward">Completing this pathway earns the Ritchie Achievement.</p>
+          <a href="pages/lesson.html">Start Learning &rarr;</a>
+        </article>
+
+        <!-- Course Card 6 -->
+        <article class="pathways">
+          <h3>The Philosopher</h3>
+          <p>Learn to reason carefully about knowledge, science, mathematics, and the ethics of technology and space.</p>
+          <p class="pathway-reward">Completing this pathway earns the Aristotle Achievement.</p>
+          <a href="pages/lesson.html">Start Learning &rarr;</a>
+        </article>
+      </div>
+
+      <!-- Choose a pathway (works with plain HTML: the choice is sent to the lesson page as part of the link) -->
+      <form action="pages/lesson.html" method="get" class="pathway-chooser">
+        <fieldset>
+          <legend>Not sure where to start?</legend>
+          <label for="pathway-choice">Choose a pathway</label>
+          <select id="pathway-choice" name="pathway">
+            <option value="mathematician">The Mathematician</option>
+            <option value="classical-physics">The Physicist: Classical Physics</option>
+            <option value="modern-physics">The Physicist: Modern Physics</option>
+            <option value="chemistry">The Chemist</option>
+            <option value="aerospace">The Engineer: Aerospace</option>
+            <option value="programming">Programming</option>
+            <option value="philosophy">The Philosopher</option>
+          </select>
+          <button type="submit">Start this pathway</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Library: every subject and course -->
+    <section id="library" class="library" aria-labelledby="library-heading">
+      <h2 id="library-heading">The Library</h2>
+      <p>
+        The Library is organized by subject, so you can learn in any order that fits you, as long as you have the
+        prerequisites. Each subject contains courses. Each course contains units, and each unit contains lessons.
+        Units and lessons are being added one course at a time.
+      </p>
+      <p>Select a subject to see its courses.</p>
+
+      <details>
+        <summary>Mathematics (12 courses plus optional advanced topics)</summary>
+        <ul>
+          <li><a href="pages/Calculus_1/Calculus_1_Overview.html">Calculus I</a></li>
+          <li>Calculus II</li>
+          <li>Calculus III</li>
+          <li>Linear Algebra I</li>
+          <li>Ordinary Differential Equations I</li>
+          <li>Vector Calculus</li>
+          <li>Probability &amp; Statistics</li>
+          <li>Real Analysis I</li>
+          <li>Complex Analysis</li>
+          <li>Numerical Methods &amp; Optimization</li>
+          <li>ODE II &amp; Introductory PDEs</li>
+          <li>Numerical Linear Algebra</li>
+          <li>Advanced Topics (optional): Differential Geometry, Tensor Calculus</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Physics (11 courses)</summary>
+        <ul>
+          <li>Statics</li>
+          <li>Classical Mechanics</li>
+          <li>Electricity &amp; Circuits</li>
+          <li>Thermodynamics</li>
+          <li>Electromagnetism</li>
+          <li>Quantum Mechanics I</li>
+          <li>Atomic &amp; Nuclear Physics</li>
+          <li>Astronomy &amp; Astrophysics</li>
+          <li>Celestial Mechanics &amp; Particle Physics</li>
+          <li>Special &amp; General Relativity Intro</li>
+          <li>Advanced Classical Mechanics</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Chemistry (9 courses)</summary>
+        <ul>
+          <li>General Chemistry I</li>
+          <li>General Chemistry II</li>
+          <li>Materials Chemistry &amp; Electrochemistry</li>
+          <li>Physical Chemistry I</li>
+          <li>Quantum Chemistry</li>
+          <li>Nuclear Chemistry</li>
+          <li>Astrochemistry</li>
+          <li>Propellant &amp; Advanced Materials Chemistry</li>
+          <li>Advanced Physical Chemistry</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Programming (7 courses)</summary>
+        <ul>
+          <li>Python Foundations</li>
+          <li>Intermediate Python</li>
+          <li>C++ Introduction</li>
+          <li>Intermediate C++</li>
+          <li>Web Visualization (HTML, CSS, JavaScript)</li>
+          <li>C++ Numerical Methods</li>
+          <li>Advanced &amp; Scientific C++ / HPC</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Aerospace &amp; Engineering (18 courses)</summary>
+        <ul>
+          <li>Engineering Foundations &amp; Computing</li>
+          <li>Aerodynamics I</li>
+          <li>Aerodynamics II</li>
+          <li>Fluid Mechanics I</li>
+          <li>Aerospace Fundamentals</li>
+          <li>CAD</li>
+          <li>Structures</li>
+          <li>Signals &amp; Systems</li>
+          <li>Orbital Mechanics I</li>
+          <li>Orbital Mechanics II</li>
+          <li>Orbital Mechanics III</li>
+          <li>Propulsion</li>
+          <li>Spacecraft Systems</li>
+          <li>Astrodynamics</li>
+          <li>GNC &amp; Control Systems</li>
+          <li>Electronics &amp; Embedded Systems</li>
+          <li>Systems Engineering</li>
+          <li>Computational Mechanics</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Philosophy of Science &amp; Technology (10 courses)</summary>
+        <ul>
+          <li>Introduction to Philosophy &amp; Logic</li>
+          <li>Logic &amp; Critical Thinking</li>
+          <li>Epistemology</li>
+          <li>Philosophy of Science</li>
+          <li>Philosophy of Mathematics</li>
+          <li>Philosophy of Physics</li>
+          <li>Quantum Interpretation</li>
+          <li>Philosophy of Mind</li>
+          <li>AI &amp; Ethics</li>
+          <li>Technology &amp; Space Ethics</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Projects: build-along guides (14 projects)</summary>
+        <p>
+          Projects are things you build, not problem sets. They serve as a test of knowledge before moving on, recommended to do the projects for experience with what you've just learnt. 
+          Projects are programmed, but support will soon come out for real life projects.
+        </p>
+        <ol>
+          <li>STEM Calculator</li>
+          <li>2D Physics Simulator</li>
+          <li>Physics &amp; Chemistry Simulation Suite</li>
+          <li>EM Field Visualizer</li>
+          <li>Glider / Aircraft Simulator</li>
+          <li>C++ Orbital Calculator</li>
+          <li>Nuclear Decay &amp; Isotope Simulator</li>
+          <li>C++ Orbital Mechanics Simulator</li>
+          <li>Three-Body Gravitational Simulator</li>
+          <li>Complete Space Mission Simulator</li>
+          <li>Autonomous Orbital Vehicle</li>
+          <li>Independent Research Project</li>
+          <li>Autonomous Interplanetary Mission Simulator</li>
+          <li>Philosophy + STEM Synthesis Essay</li>
+        </ol>
+      </details>
+
+      <p>
+        <a href="pages/library.html" class="btn-secondary">Browse the full Library</a>
+      </p>
+    </section>
+
+    <!-- How the site works -->
+    <section id="how-it-works" class="how-it-works" aria-labelledby="how-heading">
+      <h2 id="how-heading">How Intellecta Works</h2>
+      <p>
+        Intellecta combines the rigor and depth of LibreTexts with the interactivity and approachability of
+        Khan Academy.
+      </p>
+
+      <h3>The structure</h3>
+      <ol>
+        <li><strong>Subject:</strong> a field of study, such as Mathematics.</li>
+        <li><strong>Course:</strong> a full semester-scale body of material, such as Calculus I.</li>
+        <li><strong>Unit:</strong> a coherent block inside a course, such as Derivatives.</li>
+        <li><strong>Lesson:</strong> one teachable idea, such as the Chain Rule.</li>
+      </ol>
+
+      <h3>Inside every lesson</h3>
+      <dl>
+        <dt><strong>Article</strong></dt>
+        <dd>
+          Choose your depth. The Intuition tab explains the idea in plain language with visuals and simulations, focused on getting you to understand the concept. 
+          The Standard tab adds definitions and worked examples, focused on having you beign able to apply the concept you have learnt with formulas, definitions, etc. 
+          The Rigorous tab adds precise statements, proofs, and derivations, for those who already know the topic but want to understand how <i><strong>exactly</strong></i> it works.
+        </dd>
+        <dt><strong>Exercises</strong></dt>
+        <dd>
+          Practice in four tiers: Basic, Intermediate, Advanced, and Challenge. Every problem gives instant feedback,
+          a hint ladder, and a full worked solution.
+        </dd>
+        <dt><strong>Video</strong></dt>
+        <dd>
+          A short explainer of three to eight minutes. Videos are optional, and no lesson depends on one.
+        </dd>
+      </dl>
+
+      <h3>How mastery works</h3>
+      <p>
+        Every lesson is tied to named skills, and your progress is tracked skill by skill:
+      </p>
+      <ul>
+        <li><strong>Not started:</strong> no attempts yet.</li>
+        <li><strong>Attempted:</strong> you have tried the skill.</li>
+        <li><strong>Familiar:</strong> you are getting recent basic and intermediate problems right.</li>
+        <li><strong>Proficient:</strong> you are reliably getting recent problems right, including intermediate ones.</li>
+        <li><strong>Mastered:</strong> you passed a spaced re-check at least a week later.</li>
+      </ul>
+      <p>
+        Each unit ends with a unit check. Each course ends with a mastery exam that covers recall, concepts,
+        calculation, derivation, application, cross-disciplinary thinking, programming, and a challenge section.
+        If you score below 80% on an exam, Intellecta shows you which skills to review so you can retest.
+      </p>
+
+      <h3>Three ways to learn</h3>
+      <ul>
+        <li><strong>Pathway mode:</strong> follow a curated sequence of courses.</li>
+        <li><strong>Free browse:</strong> pick any course whose prerequisites you have met.</li>
+        <li><strong>Skill practice:</strong> drill a single skill whenever you want.</li>
+      </ul>
+      <p>
+        Not sure where you fit? Take the placement diagnostic. It is a short quiz that recommends a starting course
+        and flags skills to review first.
+      </p>
+      <form action="pages/placement.html" method="get">
+        <button type="submit">Take the placement diagnostic</button>
+      </form>
+    </section>
+
+    <!-- Achievement system -->
+    <section id="achievements" class="achievements" aria-labelledby="achievements-heading">
+      <h2 id="achievements-heading">The Achievement System</h2>
+      <p>
+        Achievements recognize real progress, not time spent. Each one is earned from what you actually demonstrate,
+        such as skill mastery, exam scores, and project rubrics, and each one records the date and the evidence behind it.
+      </p>
+
+      <h3>Four ranks</h3>
+      <table>
+        <caption>Achievement ranks from first steps to original contribution</caption>
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Focus</th>
+            <th scope="col">Core achievements</th>
+            <th scope="col">Course achievements</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Intuitive</th>
+            <td>Building understanding and trying things out</td>
+            <td>15</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th scope="row">Elite</th>
+            <td>Consistent, high-quality work across courses</td>
+            <td>15</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <th scope="row">Mastery</th>
+            <td>Depth, rigor, and the ability to explain and build</td>
+            <td>15</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <th scope="row">Intellectual</th>
+            <td>Connecting fields, asking original questions, and giving back</td>
+            <td>15</td>
+            <td>14</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Select a rank to see its core achievements.</p>
+
+      <details>
+        <summary>Intuitive core achievements</summary>
+        <ul>
+          <li>First Spark</li>
+          <li>Predictor</li>
+          <li>Explorer</li>
+          <li>Unit Complete</li>
+          <li>Second Try</li>
+          <li>Hint Seeker</li>
+          <li>Gut Check</li>
+          <li>Picture It</li>
+          <li>Review Day</li>
+          <li>Fresh Start</li>
+          <li>Code Starter</li>
+          <li>Error Spotter</li>
+          <li>Notebook Opened</li>
+          <li>Hat Trick</li>
+          <li>Halfway There</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Elite core achievements</summary>
+        <ul>
+          <li>Flawless Unit</li>
+          <li>Course Complete</li>
+          <li>Skill Stack</li>
+          <li>Steady Hand</li>
+          <li>Challenge Accepted</li>
+          <li>Same-Subject Pair</li>
+          <li>Three-Subject Spread</li>
+          <li>Clean Sweep</li>
+          <li>Comeback</li>
+          <li>Bug Hunter</li>
+          <li>Long Memory</li>
+          <li>Notebook Keeper</li>
+          <li>Lab Report</li>
+          <li>Deep Dive</li>
+          <li>Two Ways</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Mastery core achievements</summary>
+        <ul>
+          <li>Rigor Reader</li>
+          <li>Excellence</li>
+          <li>Full Spectrum</li>
+          <li>Builder</li>
+          <li>Oral Defense</li>
+          <li>Proof Writer</li>
+          <li>Triple Excellence</li>
+          <li>Error Bars</li>
+          <li>Ground Truth</li>
+          <li>Convergence Check</li>
+          <li>Second Reader</li>
+          <li>Honest Debugging</li>
+          <li>Model to Code</li>
+          <li>Long Game</li>
+          <li>Plain Language</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Intellectual core achievements</summary>
+        <ul>
+          <li>Bridge Builder</li>
+          <li>Argument Smith</li>
+          <li>Original Question</li>
+          <li>Teacher</li>
+          <li>Synthesis Essay</li>
+          <li>Polymath</li>
+          <li>Peer Mentor</li>
+          <li>Reproduction</li>
+          <li>Open Package</li>
+          <li>Literature Review</li>
+          <li>Steelman</li>
+          <li>Responsible Engineer</li>
+          <li>Open Presentation</li>
+          <li>Iteration Loop</li>
+          <li>Honest Limits</li>
+        </ul>
+      </details>
+
+      <h3>Main pathway achievements</h3>
+      <p>
+        Fully completing a pathway earns a named achievement. Every main pathway achievement is Intellectual rank.
+      </p>
+      <table>
+        <caption>Main pathway achievements</caption>
+        <thead>
+          <tr>
+            <th scope="col">Achievement</th>
+            <th scope="col">How it is earned</th>
+            <th scope="col">Rank</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Euler Achievement</th>
+            <td>Fully complete the Mathematician Pathway.</td>
+            <td>Intellectual</td>
+          </tr>
+          <tr>
+            <th scope="row">Tsiolkovsky Achievement</th>
+            <td>Fully complete the Aerospace Pathway.</td>
+            <td>Intellectual</td>
+          </tr>
+          <tr>
+            <th scope="row">Newton Achievement</th>
+            <td>Fully complete the Classical Physics Pathway.</td>
+            <td>Intellectual</td>
+          </tr>
+          <tr>
+            <th scope="row">Einstein Achievement</th>
+            <td>Fully complete the Modern Physics Pathway.</td>
+            <td>Intellectual</td>
+          </tr>
+          <tr>
+            <th scope="row">Lavoisier Achievement</th>
+            <td>Fully complete the Chemistry Pathway.</td>
+            <td>Intellectual</td>
+          </tr>
+          <tr>
+            <th scope="row">Ritchie Achievement</th>
+            <td>Fully complete the Programming Pathway.</td>
+            <td>Intellectual</td>
+          </tr>
+          <tr>
+            <th scope="row">Aristotle Achievement</th>
+            <td>Fully complete the Philosophy Pathway.</td>
+            <td>Intellectual</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Course achievements</h3>
+      <p>
+        Every course has its own named achievement, earned by passing every unit and scoring at least 90% on the
+        course mastery exam. For example, completing Electricity &amp; Circuits earns the Faraday Achievement.
+        Each course achievement is ranked by how hard the course is, so Python Foundations sits at a different
+        rank than Astrodynamics. There are 64 named course achievements so far.
+      </p>
+
+      <h3>The rules</h3>
+      <ul>
+        <li>Opening pages or watching videos never earns an achievement. Only demonstrated skill does.</li>
+        <li>No achievement rewards speed or daily streaks.</li>
+        <li>Achievements that need judgment, such as contributions, original work, and essays, require reviewer sign-off.</li>
+        <li>Work is classified honestly. An original-question achievement does not count as research unless the evidence supports it.</li>
+      </ul>
+
+      <p>
+        <a href="pages/achievements.html" class="btn-secondary">See every achievement</a>
+      </p>
+    </section>
+
+    <!-- Mission / About Section -->
+    <section id="about" class="mission" aria-labelledby="mission-heading">
+      <h2 id="mission-heading">Why Intellecta?</h2>
+      <p>
+        Intellecta is a community-driven learning platform built to bridge the gap
+        between introductory science and advanced university-level problem solving.
+      </p>
+      <p>
+        Everything is designed to be accessible: interactive lessons work with a keyboard, images have text
+        descriptions, and videos come with captions and transcripts.
+      </p>
+      <p>
+        Every lesson carries a status of Draft, Reviewed, or Verified, so you always know how closely it has been
+        checked. If you find a mistake, every page has a report-a-problem link, and anyone can contribute lessons,
+        exercises, and corrections.
+      </p>
+      <p>
+        <a href="pages/contribute.html" class="btn-secondary">Learn how to contribute</a>
+      </p>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section id="faq" class="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+      <details>
+        <summary>Is Intellecta free?</summary>
+        <p>Yes. Intellecta offers free, interactive lessons.</p>
+      </details>
+
+      <details>
+        <summary>Do I have to follow a pathway?</summary>
+        <p>
+          No. You can follow a pathway, browse the Library freely, or practice a single skill. A pathway is just a
+          suggested order for the courses.
+        </p>
+      </details>
+
+      <details>
+        <summary>What if I am not ready for a course?</summary>
+        <p>
+          Every course lists its prerequisites, and each lesson links back to the lessons it builds on. The placement
+          diagnostic can also recommend a starting course.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do I need to watch the videos?</summary>
+        <p>No. Videos are optional, and every lesson can be completed without one.</p>
+      </details>
+
+      <details>
+        <summary>Do achievements reward speed?</summary>
+        <p>No. Achievements reward demonstrated skill, depth, and contribution, never speed or daily streaks.</p>
+      </details>
+
+      <details>
+        <summary>Where is my progress saved?</summary>
+        <p>
+          By default, your progress is stored in your own browser. Accounts may be added later as an optional feature.
+        </p>
+      </details>
+    </section>
+
+  </main>
+
+  <!-- Bottom Footer -->
+  <footer>
+    <nav aria-label="Footer navigation">
+      <a href="#courses">Courses</a>
+      <a href="#library">Library</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#about">Our Mission</a>
+      <a href="#top">Back to top</a>
+    </nav>
+    <p>&copy; 2026 Intellecta. Become an Intellectual.</p>
+  </footer>
+
+</body>
+</html>

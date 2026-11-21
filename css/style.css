@@ -1,0 +1,56 @@
+
+#title {
+    color:var(--header);
+    font-size: 50px
+}
+
+.hero {
+    color: var(--bg)
+}
+
+/* 1. Theme variables & clean reset */
+:root {
+  --text: #04194d;
+  --surface: #ffffff;
+  --bg: #f8fafc;
+  --muted: #475569;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --header: gold;
+}
+
+/* 2. Typography & readable page flow */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--text);
+  color: var(--bg);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+a {
+    font-family: 'Inter';
+    color:gold
+}
+.navbar {
+  background-color: var(--text);
+  border-bottom: 2px solid #e0e0e0;
+  padding: 12px 24px;
+  font-family: 'Inter';
+}
+
+#nav-list{
+  display: flex !important;   
+  flex-direction: row !important;       /* Aligns <li> items side-by-side */
+  list-style: none;       /* Removes default bullet points */
+  margin: 0;              /* Removes default browser spacing */
+  padding: 0;
+  gap: 85px;              /* Adds clean spacing between links */
+  font-size: 15px
+}
+
+#nav-list a {
+  text-decoration: none;
+  color: gold;
+  font-weight: 500;
+  font-family: 'Inter';
+}
