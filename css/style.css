@@ -19,13 +19,17 @@
   --header: gold;
 }
 
-/* 2. Typography & readable page flow */
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--text);
   color: var(--bg);
   line-height: 1.6;
   padding: 2rem 1rem;
+}
+
+h1, h2 {
+  font-family: 'Newsreader', serif;
+  font-weight: 700;
 }
 a {
     font-family: 'Inter';
@@ -40,11 +44,11 @@ a {
 
 #nav-list{
   display: flex !important;   
-  flex-direction: row !important;       /* Aligns <li> items side-by-side */
-  list-style: none;       /* Removes default bullet points */
-  margin: 0;              /* Removes default browser spacing */
+  flex-direction: row !important;       
+  list-style: none;      
+  margin: 0;              
   padding: 0;
-  gap: 85px;              /* Adds clean spacing between links */
+  gap: 85px;              
   font-size: 15px
 }
 
