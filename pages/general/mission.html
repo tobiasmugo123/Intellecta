@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="[One-sentence description of this page]" />
+  <title>[Page Name] | Intellecta</title>
+  <!-- Paths assume a page two levels deep (pages/general/ or pages/Calculus_1/). One level deep: use ../ instead of ../../ -->
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@700&display=swap" />
+</head>
+<body id="top">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="navbar">
+    <nav aria-label="Main navigation">
+      <ul id="nav-list">
+        <li><a href="../../index.html" class="brand">Intellecta</a></li>
+        <li><a href="../../pages/general/contribute.html">Contributing</a></li>
+        <li><a href="../../pages/general/discussion.html">Discussion</a></li>
+        <li><a href="../../pages/general/library.html">Library</a></li>
+        <li><a href="../../pages/general/governance.html">Governance</a></li>
+        <li><a href="../../pages/general/achievements.html">Achievements</a></li>
+        <li><a href="../../pages/general/mission.html">Our Mission</a></li>
+        <li><a href="../../pages/general/license.html">License</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero: required, holds the only h1 -->
+    <section class="hero">
+      <h1 id="title">[Page Title]</h1>
+      <p>[Short introduction]</p>
+      <a href="[path/to/page.html]" class="btn-primary">[Primary button]</a>
+      <a href="[path/to/page.html]" class="btn-secondary">[Secondary button]</a>
+    </section>
+
+    <!-- Sections below are optional patterns: keep what the page needs. All ids must be unique. -->
+
+    <!-- Pattern: card catalog with chooser -->
+    <section id="[catalog-id]" class="catalog" aria-labelledby="[catalog-heading-id]">
+      <h2 id="[catalog-heading-id]">[Section heading]</h2>
+      <p>[Section introduction]</p>
+
+      <div class="course-grid">
+        <article class="pathways">
+          <h3>[Card title]</h3>
+          <p>[Card description]</p>
+          <p class="pathway-reward">[Reward or note line]</p>
+          <a href="[path/to/page.html]">[Link text] &rarr;</a>
+        </article>
+      </div>
+
+      <form action="[path/to/page.html]" method="get" class="pathway-chooser">
+        <fieldset>
+          <legend>[Question]</legend>
+          <label for="[select-id]">[Label]</label>
+          <select id="[select-id]" name="[field-name]">
+            <option value="[value-1]">[Option 1]</option>
+            <option value="[value-2]">[Option 2]</option>
+          </select>
+          <button type="submit">[Button text]</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Pattern: library drop-downs -->
+    <section id="[library-id]" class="library" aria-labelledby="[library-heading-id]">
+      <h2 id="[library-heading-id]">[Section heading]</h2>
+      <p>[Section introduction]</p>
+
+      <details>
+        <summary>[Group name] ([count])</summary>
+        <ul>
+          <li><a href="[path/to/page.html]">[Built item]</a></li>
+          <li>[Unbuilt item, no link]</li>
+        </ul>
+      </details>
+
+      <p><a href="[path/to/page.html]" class="btn-secondary">[Button text]</a></p>
+    </section>
+
+    <!-- Pattern: explanatory section -->
+    <section id="[how-id]" class="how-it-works" aria-labelledby="[how-heading-id]">
+      <h2 id="[how-heading-id]">[Section heading]</h2>
+      <p>[Section introduction]</p>
+
+      <h3>[Subheading]</h3>
+      <ol>
+        <li><strong>[Term]:</strong> [explanation]</li>
+      </ol>
+
+      <dl>
+        <dt><strong>[Term]</strong></dt>
+        <dd>[Definition]</dd>
+      </dl>
+
+      <ul>
+        <li><strong>[Term]:</strong> [explanation]</li>
+      </ul>
+    </section>
+
+    <!-- Pattern: table and drop-down list -->
+    <section id="[achievements-id]" class="achievements" aria-labelledby="[achievements-heading-id]">
+      <h2 id="[achievements-heading-id]">[Section heading]</h2>
+      <p>[Section introduction]</p>
+
+      <table>
+        <caption>[Table caption]</caption>
+        <thead>
+          <tr>
+            <th scope="col">[Column 1]</th>
+            <th scope="col">[Column 2]</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">[Row label]</th>
+            <td>[Cell]</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <details>
+        <summary>[Drop-down title]</summary>
+        <ul>
+          <li>[Item]</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- Pattern: mission / about -->
+    <section id="[about-id]" class="mission" aria-labelledby="[about-heading-id]">
+      <h2 id="[about-heading-id]">[Section heading]</h2>
+      <p>[Paragraph]</p>
+      <p><a href="[path/to/page.html]" class="btn-secondary">[Button text]</a></p>
+    </section>
+
+    <!-- Pattern: FAQ -->
+    <section id="[faq-id]" class="faq" aria-labelledby="[faq-heading-id]">
+      <h2 id="[faq-heading-id]">[Section heading]</h2>
+
+      <details>
+        <summary>[Question]</summary>
+        <p>[Answer]</p>
+      </details>
+    </section>
+
+  </main>
+
+  <footer>
+    <nav aria-label="Footer navigation">
+      <a href="../../pages/general/contribute.html">Contributing</a>
+      <a href="../../pages/general/discussion.html">Discussion</a>
+      <a href="../../pages/general/library.html">Library</a>
+      <a href="../../pages/general/governance.html">Governance</a>
+      <a href="../../pages/general/achievements.html">Achievements</a>
+      <a href="../../pages/general/mission.html">Our Mission</a>
+      <a href="../../pages/general/license.html">License</a>
+      <a href="#top">Back to top</a>
+    </nav>
+    <p>&copy; 2026 Intellecta. Built by the curious, made for the curious</p>
+  </footer>
+
+</body>
+</html>

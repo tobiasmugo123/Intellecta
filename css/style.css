@@ -20,21 +20,60 @@
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
   background-color: var(--text);
   color: var(--bg);
   line-height: 1.6;
   padding: 2rem 1rem;
 }
 
-h1, h2 {
-  font-family: 'Newsreader', serif;
+h1, h2, h3, h4, h5, h6,
+.brand {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
+  line-height: 1.25;
 }
 a {
     font-family: 'Inter';
     color:gold
 }
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  background-color: #04194d;
+  color: #f8fafc;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+thead th {
+  background-color: #020e2e;
+  color: #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+
 .navbar {
   background-color: var(--text);
   border-bottom: 2px solid #e0e0e0;
@@ -57,4 +96,15 @@ a {
   color: gold;
   font-weight: 500;
   font-family: 'Inter';
+}
+
+.quote {
+  font-family: "Brush Script MT", "Lucida Handwriting", "Apple Chancery", cursive;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #333;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
 }
